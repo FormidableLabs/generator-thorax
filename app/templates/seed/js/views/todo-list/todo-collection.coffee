@@ -1,6 +1,6 @@
 define [
   "view"
-  "hbs!templates/todo-list/todo"
+  "hbs!templates/todo-list/todo-collection-item"
 ], (View, template) ->
   Handlebones.CollectionView.extend
     name: "todo-collection"
