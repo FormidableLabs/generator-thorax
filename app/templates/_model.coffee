@@ -1,2 +1,2 @@
-define ['handlebones'], (Handlebones) ->
-  class Model extends Handlebones.Model
+define ['backbone'], (Backbone) ->
+  class Model extends Backbone.Model

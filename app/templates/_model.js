@@ -1,5 +1,5 @@
-define(['handlebones'], function (Handlebones) {
-  return Handlebones.Model.extend({
+define(['backbone'], function (Backbone) {
+  return Backbone.Model.extend({
 
   });
 });
