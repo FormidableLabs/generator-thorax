@@ -1,14 +1,14 @@
 {
   "name": "generator-handlebones",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Handlebones generator for Yeoman",
   "keywords": [
     "handlebones",
     "generator",
     "yeoman-generator"
   ],
-  "homepage": "https://github.com/walmartlabs/generator-handlebones",
-  "bugs": "https://github.com/walmartlabs/generator-handlebones/issues",
+  "homepage": "https://github.com/FormidableLabs/generator-handlebones",
+  "bugs": "https://github.com/FormidableLabs/generator-handlebones/issues",
   "author": {
     "name": "Ryan Eastridge",
     "email": "ryan.eastridge@formidablelabs.com",
@@ -29,7 +29,7 @@
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/walmartlabs/generator-handlebones.git"
+    "url": "git://github.com/FormidableLabs/generator-handlebones.git"
   },
   "scripts": {
     "test": "./node_modules/.bin/mocha"
