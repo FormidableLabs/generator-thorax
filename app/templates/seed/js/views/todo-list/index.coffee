@@ -1,9 +1,10 @@
 define [
   "view"
-  "views/todo-collection"
+  "views/todo-list/todo-collection"
   "hbs!templates/todo-list/index"
 ], (View, TodosCollectionView, template) ->
   Handlebones.View.extend
+    name: "todo-list/index"
     events:
       "submit form": (event) ->
         event.preventDefault()
@@ -14,7 +15,7 @@ define [
       "change input[type=\"checkbox\"]": (event) ->
         $(event.target).view().model.set done: event.target.checked
 
-    template: Handlebars.compile("{{view todosCollectionView}}" + "<form><input name=\"title\">" + "<input type=\"submit\" value=\"Add\"></form>")
+    template: template
     initialize: (options) ->
       @todosCollectionView = @addChild(new TodosCollectionView(collection: options.collection))
 

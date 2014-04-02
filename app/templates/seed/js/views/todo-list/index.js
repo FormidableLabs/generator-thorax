@@ -1,9 +1,10 @@
 define([
   'view',
-  "views/todo-collection",
+  "views/todo-list/todo-collection",
   'hbs!templates/todo-list/index'
 ], function(View, TodosCollectionView, template) {
   return Handlebones.View.extend({
+    name: "todo-list/index",
     events: {
       "submit form": function (event) {
         event.preventDefault();
@@ -19,11 +20,7 @@ define([
         });
       }
     },
-    template: Handlebars.compile(
-      '{{view todosCollectionView}}' +
-      '<form><input name="title">' + 
-      '<input type="submit" value="Add"></form>'
-    ),
+    template: template,
     initialize: function (options) {
       this.todosCollectionView = this.addChild(new TodosCollectionView({
         collection: options.collection

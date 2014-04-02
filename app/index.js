@@ -348,7 +348,7 @@ Generator.prototype.todoList = function() {
     this.copy('seed/js/views/todo-list/index' + scriptExt, 'js/views/todo-list/index' + scriptExt);
     this.copy('seed/js/views/todo-list/todo-collection' + scriptExt, 'js/views/todo-list/todo-collection' + scriptExt);
     this.copy('seed/js/templates/todo-list/index.hbs', 'js/templates/todo-list/index.hbs');
-    this.copy('seed/js/templates/todo-list/todo-collection-item.hbs', 'js/templates/todo-list/todo-collection-item.hbs');
+    this.copy('seed/js/templates/todo-list/todo-collection-model.hbs', 'js/templates/todo-list/todo-collection-model.hbs');
     this.copy('seed/js/routers/todo-list' + scriptExt, 'js/routers/todo-list' + scriptExt);
     this.copy('seed/css/todo-list.css', 'css/todo-list.css');
   }
